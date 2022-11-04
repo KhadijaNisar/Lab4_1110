@@ -1,0 +1,92 @@
+#activity1 {
+    width: 30%;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+#activity1:hover {
+    transform: rotate(180deg);
+}
+
+#activity2 {
+    margin: 5%;
+    width: 10%;
+    height: 20%;
+    background-color: red;
+}
+
+#activity2:hover {
+
+    background-color: rgb(34, 182, 56);
+    animation: animation 2s infinite;
+    transition-delay: 1s;
+
+}
+
+@keyframes animation {
+    from {
+        height: 20%;
+        width: 40%;
+        transform: rotate(0deg);
+    }
+
+    to {
+        height: 20%;
+        width: 40%;
+        transform: rotate(180deg);
+    }
+}
+
+#activity3 {
+    filter: grayscale(100%);
+    filter: opacity(50%);
+    filter: blur(5px);
+
+}
+
+#container {
+    width: 25%;
+    float: left;
+}
+
+#container figure img {
+    width: 100%;
+    height: 70%;
+}
+
+#container figcaption {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    #container {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:800px)and (min-width:300px) {
+    #container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    #container {
+        width: 100%;
+    }
+}
+
+#activity5 h2 {
+    width: 20%;
+    text-shadow: 5px 5px 10px blue;
+}
+
+#activity5 img {
+    box-shadow: 20px 20px 50px 10px rgb(10, 209, 106);
+    height: 50%;
+    width: 50%;
+}
+
+#activity5 figcaption {
+    font-size: larger;
+}
